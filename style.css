@@ -146,7 +146,7 @@ footer {
     font-size: 0.9rem;
 }
 
-/* Mobile Responsiveness (320px to 650px) */
+
 @media (max-width: 650px) {
     header {
         flex-direction: column;
@@ -167,4 +167,152 @@ footer {
         width: 130px;
         height: 130px;
     }
+}
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.bar-background {
+  background-color: #e0e0e0;
+  height: 12px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.bar-fill {
+  background-color: #007bff;
+  height: 100%;
+}
+
+
+.filter-buttons {
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 8px 14px;
+  margin-right: 8px;
+  border: 1px solid #007bff;
+  background-color: white;
+  color: #007bff;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.projects-grid, .services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.badge {
+  background-color: #6c757d;
+  color: white;
+  padding: 3px 8px;
+  font-size: 12px;
+  border-radius: 4px;
+}
+
+.project-link {
+  color: #007bff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#contactForm {
+  max-width: 500px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+}
+
+.field label {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.field input, .field textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.error {
+  color: red;
+  font-size: 13px;
+  margin-top: 3px;
+}
+
+.success {
+  color: green;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.submit-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#clock {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+
+.rating-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.stars span {
+  font-size: 2rem;
+  color: #ccc;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+  padding: 0 2px;
+}
+
+.stars span.active,
+.stars span.hover {
+  color: #f39c12;
+}
+
+#rating-message {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #2e7d32;
+  min-height: 24px;
 }

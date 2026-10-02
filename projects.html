@@ -1,21 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects & Skills | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <main style="text-align: center; padding: 5rem 1rem;">
-        <h1>🚀 Projects Coming Soon</h1>
-        <p style="margin: 1.5rem 0; font-size: 1.1rem; color: #666;"> Please check back later!</p>
-        
-        <a href="index.html" style="text-decoration: none; color: var(--primary-color, #007bff); font-weight: bold;">
-            ← Back to Home
-        </a>
-    </main>
 
+  <header>
+    <p id="clock"></p>
+    <div class="logo">
+      <h1>My Portfolio</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+
+  
+    <section class="section">
+      <h2>My Skills</h2>
+      <div class="skills-list">
+
+        <div class="skill">
+          <p>HTML5 & CSS3 </p>
+          <div class="bar-background"><div class="bar-fill" style="width: 85%;"></div></div>
+        </div>
+
+        <div class="skill">
+          <p>JavaScript</p>
+          <div class="bar-background"><div class="bar-fill" style="width: 70%;"></div></div>
+        </div>
+
+        <div class="skill">
+          <p>Python </p>
+          <div class="bar-background"><div class="bar-fill" style="width: 75%;"></div></div>
+        </div>
+
+        <div class="skill">
+          <p>Git & GitHub </p>
+          <div class="bar-background"><div class="bar-fill" style="width: 80%;"></div></div>
+        </div>
+
+        <div class="skill">
+          <p>C++ </p>
+          <div class="bar-background"><div class="bar-fill" style="width: 65%;"></div></div>
+        </div>
+
+      </div>
+    </section>
+
+  
+    <section class="section">
+      <h2>My Projects</h2>
+
+    
+      <div class="filter-buttons">
+        <button class="btn active" onclick="filterProjects('all')">Show All</button>
+        <button class="btn" onclick="filterProjects('web')">Web Projects</button>
+        <button class="btn" onclick="filterProjects('other')">Other Projects</button>
+      </div>
+
+      <div class="projects-grid">
+
+        
+        <div class="card project-card" data-category="web">
+          <h3>Personal Portfolio Website</h3>
+          <p>A multi-page responsive web application built to showcase my web development skills and academic work.</p>
+          <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+          <!-- REPLACE WITH YOUR GITHUB LINK IF YOU HAVE ONE -->
+          <a href="https://github.com/jjmuller403-byte/My.Portfolio" target="_blank" class="project-link">View Repo</a>
+        </div>
+
+      
+        <div class="card project-card" data-category="other">
+          <h3>AquaTrack IoT Telemetry</h3>
+          <p>A smart water monitoring solution designed for tracking community water consumption and resource management.</p>
+          <p><strong>Technologies:</strong> C++, Python, IoT Sensors</p>
+          <span class="badge">Coming Soon</span>
+        </div>
+
+      
+        <div class="card project-card" data-category="web">
+          <h3>Short Video Processor</h3>
+          <p>An automated backend script that clips, processes, and structures short video clips using cloud APIs.</p>
+          <p><strong>Technologies:</strong> Python, REST APIs</p>
+          <span class="badge">In Progress</span>
+        </div>
+
+      </div>
+    </section>
+
+    
+    <section class="section">
+      <h2>Services I Offer</h2>
+      <div class="services-grid">
+        <div class="card">
+          <h3>Website Design</h3>
+          <p>Building basic, responsive, and mobile-friendly websites using modern HTML and CSS.</p>
+        </div>
+        <div class="card">
+          <h3>Hardware Setup</h3>
+          <p>Configuring basic microcontrollers, sensors, and telemetry systems for small projects.</p>
+        </div>
+        <div class="card">
+          <h3>Technical Writing</h3>
+          <p>Writing structured documentation, project proposals, and technical guides.</p>
+        </div>
+      </div>
+    </section>
+
+    
+    <section id="contact" class="section">
+      <h2>Contact Me</h2>
+      <form id="contactForm">
+
+        <div class="field">
+          <label for="userName">Full Name:</label>
+          <input type="text" id="userName">
+          <span class="error" id="nameError"></span>
+        </div>
+
+        <div class="field">
+          <label for="userEmail">Email Address:</label>
+          <input type="text" id="userEmail">
+          <span class="error" id="emailError"></span>
+        </div>
+
+        <div class="field">
+          <label for="userMessage">Message:</label>
+          <textarea id="userMessage" rows="4"></textarea>
+          <span class="error" id="messageError"></span>
+        </div>
+
+        <button type="submit" class="submit-btn">Send Message</button>
+        <p class="success" id="successMsg"></p>
+
+      </form>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+  
+   <div class="rating-container">
+  <h3>Rate My Work</h3>
+  <div class="stars" id="star-rating">
+    <span data-value="1">★</span>
+    <span data-value="2">★</span>
+    <span data-value="3">★</span>
+    <span data-value="4">★</span>
+    <span data-value="5">★</span>
+  </div>
+  <p id="rating-message" class="rating-message"></p>
+</div>
 </body>
 </html>

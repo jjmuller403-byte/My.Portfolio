@@ -8,5 +8,5 @@ A responsive home page built using semantic HTML5 and custom external CSS, style
 - **CSS3**
 
 ## Live Links
-- **GitHub Pages:** https://jjmuller403-byte.github.io/[REPO-NAME]/
-- **Vercel:** https://[YOUR-PROJECT-NAME].vercel.app/
+- **GitHub Pages:** https://jjmuller403-byte.github.io/My.Portfolio/
+- **Vercel:** https://my-portfolio-six-black-48.vercel.app/
